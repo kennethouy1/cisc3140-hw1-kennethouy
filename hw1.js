@@ -16,7 +16,9 @@ function average(arr){
 
 //min function
 function min(arr){
-    if(arr.lenth === 0) return null;
+    if(arr.lenth === 0){
+        return null;
+    }
     let smallest = arr[0];
     for (const num of arr){
         if(num <smallest) {
@@ -28,7 +30,9 @@ function min(arr){
 
 //max function
 function max(arr){
-    if(arr.lenth === 0) return null;
+    if(arr.lenth === 0){
+        return null;
+    }
     let largest = arr[0];
     for (const num of arr){
         if(num > largest) {
@@ -37,4 +41,37 @@ function max(arr){
     }
     return smallest; 
 }
+
+//part 2
+//capitalize function
+function capitalize(str){
+    if(str.length ===0 ){
+        return "";
+    }
+    return str[0].toUpperCase() + str.slice(1);
+}
+
+//reverse functoin
+function reverse(str){
+    let result = "";
+    for (const i = str.length - 1; i >= 0; i--){
+        result+= str[i];
+    }
+    return result;
+}
+
+//function count vowels
+
+function countVowels(str){
+    let count = 0;
+    let vowels = "aeiouAEIOU";
+
+    for(const char of str ){
+        if(vowels.includes(char)){
+            count++;
+        }
+    }
+    return count;
+}
+
 
