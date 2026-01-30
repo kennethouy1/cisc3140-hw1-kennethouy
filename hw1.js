@@ -16,5 +16,15 @@ function average(arr){
 
 //mix function
 function min(arr){
-    
+    if(arr.lenth === 0) return null;
+    let smallest = arr[0];
+    for (const num of arr){
+        if(num <smallest) {
+            smallest = num;
+        }
+    }
+    return smallest; 
 }
+
+
+
