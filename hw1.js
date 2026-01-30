@@ -14,7 +14,7 @@ function average(arr){
     return sum(arr) / arr.length;
 }
 
-//mix function
+//min function
 function min(arr){
     if(arr.lenth === 0) return null;
     let smallest = arr[0];
@@ -26,5 +26,15 @@ function min(arr){
     return smallest; 
 }
 
-
+//max function
+function max(arr){
+    if(arr.lenth === 0) return null;
+    let largest = arr[0];
+    for (const num of arr){
+        if(num > largest) {
+            largest = num;
+        }
+    }
+    return smallest; 
+}
 
