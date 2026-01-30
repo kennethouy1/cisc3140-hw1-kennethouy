@@ -3,7 +3,7 @@
 function sum(arr){
     let total = 0;
 
-    for(const n of arr){
+    for(const num of arr){
         total += num;
     }
 
@@ -39,7 +39,7 @@ function max(arr){
             largest = num;
         }
     }
-    return smallest; 
+    return largest; 
 }
 
 //part 2
@@ -54,7 +54,7 @@ function capitalize(str){
 //reverse functoin
 function reverse(str){
     let result = "";
-    for (const i = str.length - 1; i >= 0; i--){
+    for (let i = str.length - 1; i >= 0; i--){
         result+= str[i];
     }
     return result;
@@ -73,5 +73,21 @@ function countVowels(str){
     }
     return count;
 }
+
+//part 3 Object methods
+const student = {
+  name: "Kenneth",
+  grades: [90, 85, 92, 88],
+
+  getAverage: function () {
+    return average(this.grades);
+  },
+
+  isHonorRoll: function () {
+    return this.getAverage() >= 90;
+  }
+};
+
+
 
 
