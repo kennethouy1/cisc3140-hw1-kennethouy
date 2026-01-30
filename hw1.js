@@ -16,7 +16,7 @@ function average(arr){
 
 //min function
 function min(arr){
-    if(arr.lenth === 0){
+    if(arr.length === 0){
         return null;
     }
     let smallest = arr[0];
@@ -30,7 +30,7 @@ function min(arr){
 
 //max function
 function max(arr){
-    if(arr.lenth === 0){
+    if(arr.length === 0){
         return null;
     }
     let largest = arr[0];
@@ -88,6 +88,29 @@ const student = {
   }
 };
 
+//test
+
+const numbers = [10, 20, 30, 40, 50];
+const text = "javascript";
+
+
+console.log("The numbers are ", numbers);
+console.log("The text is ",text);
+console.log("Array functions");
+console.log("Sum:", sum(numbers));
+console.log("Average:", average(numbers));
+console.log("Min:", min(numbers));
+console.log("Max:", max(numbers));
+
+console.log("String functions");
+console.log("Capitalize:", capitalize(text));
+console.log("Reverse:", reverse(text));
+console.log("Vowel Count:", countVowels(text));
+
+console.log("Object methods");
+console.log("Student Name:", student.name);
+console.log("Average Grade:", student.getAverage());
+console.log("Honor Roll:", student.isHonorRoll());
 
 
 

@@ -1,3 +1,5 @@
-My name is Kenneth Ouy. This repo is my first homework submission for CISC3140.
+Name: Kenneth Ouy
+Course: CISC 3140
 
-type "node hw1.js" to run the code. 
+How to Run
+node hw1.js
